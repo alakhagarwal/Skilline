@@ -789,6 +789,116 @@ nav {
   display: block;
 }
 
+/* Assessments Section */
+.assessments-section {
+  padding: 100px 0;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.assessments-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.assessments-text h2 {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 30px;
+  color: #2f327d;
+}
+
+.assessments-text p {
+  font-size: clamp(18px, 3vw, 22px);
+  color: var(--text-secondary);
+  line-height: 180%;
+}
+
+.assessments-image img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.class-management-section {
+  padding: 100px 0;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.management-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.management-text h2 {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 30px;
+  color: #2f327d;
+}
+
+.management-text p {
+  font-size: clamp(18px, 3vw, 22px);
+  color: var(--text-secondary);
+  line-height: 180%;
+}
+
+.management-image img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  border-radius: 20px;
+}
+
+/* Discussion Section */
+.discussion-section {
+  padding: 100px 0;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.discussion-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.discussion-text h2 {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 30px;
+  color: #2f327d;
+}
+
+.discussion-text p {
+  font-size: clamp(18px, 3vw, 22px);
+  color: var(--text-secondary);
+  line-height: 180%;
+}
+
+.discussion-image img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
 /* Tablet Styles (768px - 1024px) */
 @media screen and (max-width: 1024px) {
   .container {
@@ -870,6 +980,13 @@ nav {
 
   .interface-content,
   .tools-content {
+    gap: 60px;
+    max-width: 100%;
+  }
+
+  .assessments-content,
+  .management-content,
+  .discussion-content {
     gap: 60px;
     max-width: 100%;
   }
@@ -1111,6 +1228,20 @@ nav {
   .feature-icon {
     flex-shrink: 0;
   }
+
+  .assessments-section,
+  .class-management-section,
+  .discussion-section {
+    padding: 60px 0;
+  }
+
+  .assessments-content,
+  .management-content,
+  .discussion-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
 }
 
 /* Small Mobile (480px and below) */
@@ -1289,6 +1420,24 @@ nav {
   }
 
   .tools-image > img {
+    border-radius: 15px;
+  }
+
+  .assessments-section,
+  .class-management-section,
+  .discussion-section {
+    padding: 40px 0;
+  }
+  
+  .assessments-content,
+  .management-content,
+  .discussion-content {
+    gap: 30px;
+  }
+  
+  .assessments-image img,
+  .management-image img,
+  .discussion-image img {
     border-radius: 15px;
   }
 }
