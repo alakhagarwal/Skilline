@@ -210,7 +210,7 @@ nav {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
-  /* animation: fadeInUp 0.8s ease-out 0.2s both; */
+  animation: fadeInUp 0.8s ease-out 0.2s both;
   color: #2f327d;
 }
 
@@ -227,14 +227,14 @@ nav {
   color: var(--text-secondary);
   margin-bottom: 30px;
   line-height: 160%;
-  /* animation: fadeInUp 0.8s ease-out 0.4s both; */
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .hero-buttons {
   display: flex;
   gap: 20px;
   align-items: center;
-  /* animation: fadeInUp 0.8s ease-out 0.6s both; */
+  animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 .join-btn {
@@ -292,7 +292,11 @@ nav {
 .hero-image {
   position: relative;
   text-align: center;
-  /* animation: fadeInRight 0.8s ease-out 0.3s both; */
+  animation: fadeInRight 0.8s ease-out 0.3s both;
+}
+
+.hero-image img {
+  animation: float 3s ease-in-out infinite;
 }
 
 .stats-card {
@@ -325,7 +329,7 @@ nav {
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 40px;
-  /* animation: fadeInUp 0.8s ease-out; */
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .company-logos {
@@ -339,7 +343,7 @@ nav {
 .company-logos > img {
   transition: all 0.4s ease;
   cursor: pointer;
-  /* animation: fadeInUp 0.8s ease-out; */
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .features-section {
@@ -359,6 +363,7 @@ nav {
   font-weight: 700;
   margin-bottom: 20px;
   color: #f48c06;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .features-header p {
@@ -367,6 +372,7 @@ nav {
   max-width: 837px;
   margin: 0 auto;
   line-height: 180%;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .features-grid {
@@ -438,6 +444,7 @@ nav {
   color: #2f327d;
   margin-bottom: 20px;
   line-height: 180%;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .what-header .highlight-orange {
@@ -452,6 +459,7 @@ nav {
   margin: 0 auto 60px;
   line-height: 180%;
   letter-spacing: 2%;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .instructor-student-cards {
@@ -475,7 +483,6 @@ nav {
 .card:hover {
   transform: translateY(-5px);
 }
-/* changed the linear gradient */
 .instructor-card {
   background-image: url("images/what1.png");
   background-size: cover;
@@ -623,6 +630,7 @@ nav {
   left: -30px;
   width: 138px;
   z-index: 1;
+  animation: float 4s ease-in-out infinite;
 }
 
 .b2 {
@@ -631,6 +639,7 @@ nav {
   width: 100%;
   height: 471px;
   z-index: 2;
+  animation: float 4s ease-in-out infinite;
 }
 
 .b3 {
@@ -1096,7 +1105,6 @@ nav {
   color: #f48c06;
 }
 
-/* Testimonial Showcase */
 .testimonial-showcase {
   display: flex;
   flex-direction: column;
@@ -1213,6 +1221,7 @@ nav {
   margin-bottom: 20px;
   line-height: 180%;
   font-family: "Nunito Sans", sans-serif;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .news-header p {
@@ -1222,6 +1231,7 @@ nav {
   margin: 0 auto;
   line-height: 180%;
   font-family: "Nunito Sans", sans-serif;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 /* News Grid */
@@ -1233,7 +1243,6 @@ nav {
   margin: 0 auto;
 }
 
-/* Main News Article (Left Side) */
 .main-news-article {
   position: relative;
   border-radius: 20px;
@@ -1309,7 +1318,6 @@ nav {
   text-decoration: underline;
 }
 
-/* Side News Articles (Right Side) */
 .side-news-articles {
   display: flex;
   flex-direction: column;
@@ -1388,7 +1396,7 @@ nav {
   position: relative;
   overflow: hidden;
 }
-/* Footer Header */
+
 .footer-header {
   text-align: center;
   margin-bottom: 60px;
@@ -1496,7 +1504,7 @@ nav {
   transform: translateY(-2px);
 }
 
-/* Footer Links */
+
 .footer-links {
   display: flex;
   justify-content: center;
@@ -1537,6 +1545,71 @@ nav {
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 4%;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 /* Tablet Style */
