@@ -51,7 +51,7 @@ Skilline is a beautifully designed website for an online education platform. Thi
 
 - **HTML5**: For the website structure
 - **CSS3**: For styling, animations, and responsive design
-- **JavaScript**: For theme switching and interactive features
+- **JavaScript**: For theme switching and much more interactive features
 - **Google Fonts**: For beautiful typography (Poppins and Nunito Sans)
 - **CSS Grid & Flexbox**: For modern, flexible layouts
 
