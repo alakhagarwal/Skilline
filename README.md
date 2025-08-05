@@ -39,7 +39,7 @@ Skilline is a beautifully designed website for an online education platform. Thi
 1. **Download the files**: Save the HTML file and create an `images` folder
 2. **Add images**: You'll need to add the referenced images to the `images` folder
 3. **Open in browser**: Simply double-click the HTML file to view it
-4. **Customize**: Edit colors, text, or layout as needed
+4. **Customize**: Edit colors, text, or layout as  needed
 
 ### For Regular Users
 - **Navigate easily**: Use the top menu to jump to different sections
